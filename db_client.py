@@ -1,10 +1,9 @@
 import sqlite3
 
 
-def coooect():
+def connect():
     conn = sqlite3.connect('flats.db')
     return conn
-
 
 def create_flats_table():
     conn = connect()
@@ -40,6 +39,7 @@ def create_flats_table():
     :district ,
     :coordinates
     )""", flat)
+a = 'some'
 
     conn.commit()
     conn.close()
